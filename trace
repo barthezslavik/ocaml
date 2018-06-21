@@ -1,0 +1,414 @@
+➜  oop ocamldebug ./basic  
+	OCaml Debugger version 4.04.0
+
+(ocd) next
+Loading program... done.
+Time: 1 - pc: 7384 - module Pervasives
+26     (Invalid_argument "index out of bounds")<|a|>
+(ocd) 
+Time: 2 - pc: 7552 - module Pervasives
+164   float_of_bits 0x7F_F0_00_00_00_00_00_00L<|a|>
+(ocd) 
+Time: 3 - pc: 7568 - module Pervasives
+166   float_of_bits 0xFF_F0_00_00_00_00_00_00L<|a|>
+(ocd) 
+Time: 4 - pc: 7584 - module Pervasives
+168   float_of_bits 0x7F_F0_00_00_00_00_00_01L<|a|>
+(ocd) 
+Time: 5 - pc: 7600 - module Pervasives
+170   float_of_bits 0x7F_EF_FF_FF_FF_FF_FF_FFL<|a|>
+(ocd) 
+Time: 6 - pc: 7616 - module Pervasives
+172   float_of_bits 0x00_10_00_00_00_00_00_00L<|a|>
+(ocd) 
+Time: 7 - pc: 7632 - module Pervasives
+174   float_of_bits 0x3C_B0_00_00_00_00_00_00L<|a|>
+(ocd) 
+Time: 8 - pc: 7784 - module Pervasives
+281 let stdin = open_descriptor_in 0<|a|>
+(ocd) 
+Time: 9 - pc: 7796 - module Pervasives
+282 let stdout = open_descriptor_out 1<|a|>
+(ocd) 
+Time: 10 - pc: 7808 - module Pervasives
+283 let stderr = open_descriptor_out 2<|a|>
+(ocd) 
+Time: 11 - pc: 8740 - module Pervasives
+523 let _ = register_named_value "Pervasives.do_at_exit" do_at_exit<|a|>
+(ocd) 
+Time: 12 - pc: 29004 - module Bytes
+53 let empty = create 0<|a|>
+(ocd) 
+Time: 13 - pc: 34924 - module Sys
+No source file for Sys.
+(ocd) 
+Time: 14 - pc: 34952 - module Sys
+No source file for Sys.
+(ocd) 
+Time: 15 - pc: 146764 - module CamlinternalOO
+121 let dummy_met : item = obj (Obj.new_block 0 0)<|a|>
+(ocd) 
+Calling function has no debugging information.
+(ocd) 
+(ocd) 
+(ocd) 
+(ocd) next
+Time: 333 - pc: 141644 - module CamlinternalOO
+332   <|b|>let env_init = class_init table in
+(ocd) 
+Calling function has no debugging information.
+(ocd) next    
+Time: 338 - pc: 142712 - module CamlinternalOO
+270   <|b|>let nmeths = Array.length meths and nvals = Array.length vals in
+(ocd) 
+Time: 339 - pc: 142728 - module CamlinternalOO
+271   <|b|>let res = Array.make (nmeths + nvals) 0 in
+(ocd) 
+Time: 340 - pc: 142752 - module CamlinternalOO
+272   <|b|>for i = 0 to nmeths - 1 do
+(ocd) 
+Time: 341 - pc: 142788 - module CamlinternalOO
+273     <|b|>res.(i) <- get_method_label table meths.(i)
+(ocd) 
+Time: 342 - pc: 142804 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 359 - pc: 142816 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 360 - pc: 142832 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 361 - pc: 142788 - module CamlinternalOO
+273     <|b|>res.(i) <- get_method_label table meths.(i)
+(ocd) 
+Time: 362 - pc: 142804 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 374 - pc: 142816 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 375 - pc: 142832 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 376 - pc: 142788 - module CamlinternalOO
+273     <|b|>res.(i) <- get_method_label table meths.(i)
+(ocd) 
+Time: 377 - pc: 142804 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 394 - pc: 142816 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 395 - pc: 142832 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 396 - pc: 142788 - module CamlinternalOO
+273     <|b|>res.(i) <- get_method_label table meths.(i)
+(ocd) 
+Time: 397 - pc: 142804 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 404 - pc: 142816 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 405 - pc: 142832 - module CamlinternalOO
+273     res.(i) <- get_method_label table meths.(i)<|a|>
+(ocd) 
+Time: 406 - pc: 142884 - module CamlinternalOO
+275   <|b|>for i = 0 to nvals - 1 do
+(ocd) 
+Time: 407 - pc: 142924 - module CamlinternalOO
+276     <|b|>res.(i+nmeths) <- new_variable table vals.(i)
+(ocd) 
+Time: 408 - pc: 142944 - module CamlinternalOO
+276     res.(i+nmeths) <- new_variable table vals.(i)<|a|>
+(ocd) 
+Time: 422 - pc: 142956 - module CamlinternalOO
+276     res.(i+nmeths) <- new_variable table vals.(i)<|a|>
+(ocd) 
+Time: 423 - pc: 142980 - module CamlinternalOO
+276     res.(i+nmeths) <- new_variable table vals.(i)<|a|>
+(ocd) 
+Time: 424 - pc: 143032 - module CamlinternalOO
+278   <|b|>res
+(ocd) 
+Calling function has no debugging information.
+(ocd) next
+Time: 426 - pc: 136896 - module CamlinternalOO
+599   let len = Array.length methods in <|b|>let i = ref 0 in
+(ocd) 
+Time: 427 - pc: 136908 - module CamlinternalOO
+600   <|b|>while !i < len do
+(ocd) 
+Time: 428 - pc: 136920 - module CamlinternalOO
+601     <|b|>let label = methods.(!i) in let clo = method_impl table i methods in
+(ocd) 
+Time: 429 - pc: 136944 - module CamlinternalOO
+601     let label = methods.(!i) in <|b|>let clo = method_impl table i methods in
+(ocd) 
+Time: 436 - pc: 136964 - module CamlinternalOO
+602     <|b|>set_method table label clo;
+(ocd) 
+Time: 449 - pc: 136980 - module CamlinternalOO
+602     set_method table label clo<|a|>;
+(ocd) 
+Time: 450 - pc: 136920 - module CamlinternalOO
+601     <|b|>let label = methods.(!i) in let clo = method_impl table i methods in
+(ocd) 
+Time: 451 - pc: 136944 - module CamlinternalOO
+601     let label = methods.(!i) in <|b|>let clo = method_impl table i methods in
+(ocd) 
+Time: 458 - pc: 136964 - module CamlinternalOO
+602     <|b|>set_method table label clo;
+(ocd) 
+Time: 481 - pc: 136980 - module CamlinternalOO
+602     set_method table label clo<|a|>;
+(ocd) 
+Time: 482 - pc: 136920 - module CamlinternalOO
+601     <|b|>let label = methods.(!i) in let clo = method_impl table i methods in
+(ocd) 
+Time: 483 - pc: 136944 - module CamlinternalOO
+601     let label = methods.(!i) in <|b|>let clo = method_impl table i methods in
+(ocd) 
+Time: 490 - pc: 136964 - module CamlinternalOO
+602     <|b|>set_method table label clo;
+(ocd) 
+Time: 508 - pc: 136980 - module CamlinternalOO
+602     set_method table label clo<|a|>;
+(ocd) 
+Time: 509 - pc: 136920 - module CamlinternalOO
+601     <|b|>let label = methods.(!i) in let clo = method_impl table i methods in
+(ocd) 
+Time: 510 - pc: 136944 - module CamlinternalOO
+601     let label = methods.(!i) in <|b|>let clo = method_impl table i methods in
+(ocd) 
+Time: 517 - pc: 136964 - module CamlinternalOO
+602     <|b|>set_method table label clo;
+(ocd) 
+Time: 535 - pc: 136980 - module CamlinternalOO
+602     set_method table label clo<|a|>;
+(ocd) 
+Time: 536 - pc: 141656 - module CamlinternalOO
+333   <|b|>init_class table;
+(ocd) 
+Time: 547 - pc: 141664 - module CamlinternalOO
+333   init_class table<|a|>;
+(ocd) 
+Time: 548 - pc: 141688 - module CamlinternalOO
+334   (env_init (Obj.repr 0)<|a|>, class_init, env_init, Obj.repr 0)
+(ocd) 
+Calling function has no debugging information.
+(ocd) 
+(ocd) 
+(ocd) next
+Time: 550 - pc: 141316 - module CamlinternalOO
+359   if (Obj.magic obj_0 : bool) then obj_0 else <|b|>begin
+(ocd) 
+Time: 551 - pc: 141348 - module CamlinternalOO
+363     <|b|>Obj.set_field obj 0 (Obj.repr table.methods);
+(ocd) 
+Time: 552 - pc: 141368 - module CamlinternalOO
+364     <|b|>Obj.obj (set_id obj)
+(ocd) 
+Time: 553 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 555 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 556 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 558 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 559 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 561 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 562 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 564 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 565 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 567 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 568 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 570 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 571 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 573 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 574 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 576 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 577 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 579 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 580 - pc: 149216 - module Basic
+19   <|b|>s#push i
+(ocd) 
+Time: 582 - pc: 149240 - module Basic
+19   s#push i<|a|>
+(ocd) 
+Time: 583 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 597 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 598 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 605 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 640 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 653 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 654 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 661 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 696 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 708 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 709 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 716 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 751 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 762 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 763 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 770 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 805 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 815 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 816 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 823 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 858 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 867 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 868 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 875 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 910 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 918 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 919 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 926 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 961 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 968 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 969 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 976 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 1011 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 1017 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 1018 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 1025 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 1060 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 1065 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Time: 1066 - pc: 149304 - module Basic
+23   <|b|>Printf.printf "Popped %d off the stack.\n" s#pop
+(ocd) 
+Time: 1073 - pc: 149324 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 1108 - pc: 149348 - module Basic
+23   Printf.printf "Popped %d off the stack.\n" s#pop<|a|>
+(ocd) 
+Time: 1112 - pc: 149368 - module Basic
+22 while s#size<|a|> > 0 do
+(ocd) 
+Popped 10 off the stack.
+Popped 9 off the stack.
+Popped 8 off the stack.
+Popped 7 off the stack.
+Popped 6 off the stack.
+Popped 5 off the stack.
+Popped 4 off the stack.
+Popped 3 off the stack.
+Popped 2 off the stack.
+Popped 1 off the stack.
+Time: 1127 - pc: 149436 - module Std_exit
+18 let _ = do_at_exit()<|a|>
+(ocd) 
+Time: 1128
+Program exit.
