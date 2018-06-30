@@ -1,0 +1,3 @@
+# jbuilder build input.ml
+# OCAMLPARAM: unset
+$ /usr/bin/ocamlc.opt -config > /tmp/jbuild88151f.output
