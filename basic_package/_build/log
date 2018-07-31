@@ -1,0 +1,7 @@
+# jbuilder build basic.exe
+# OCAMLPARAM: unset
+$ /usr/bin/ocamlc.opt -config > /tmp/jbuild6af5c6.output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl basic.ml) > _build/default/basic.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .basic.eobjs -no-alias-deps -o .basic.eobjs/basic.cmo -c -impl basic.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .basic.eobjs -intf-suffix .ml -no-alias-deps -o .basic.eobjs/basic.cmx -c -impl basic.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -o basic.exe .basic.eobjs/basic.cmx)

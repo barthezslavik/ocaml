@@ -1,0 +1,7 @@
+# jbuilder build hello.exe
+# OCAMLPARAM: unset
+$ /usr/bin/ocamlc.opt -config > /tmp/jbuild39c8c0.output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl hello.ml) > _build/default/hello.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .hello.eobjs -no-alias-deps -o .hello.eobjs/hello.cmo -c -impl hello.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .hello.eobjs -intf-suffix .ml -no-alias-deps -o .hello.eobjs/hello.cmx -c -impl hello.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -o hello.exe .hello.eobjs/hello.cmx)

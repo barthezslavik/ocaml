@@ -1,0 +1,7 @@
+# jbuilder build point.exe
+# OCAMLPARAM: unset
+$ /usr/bin/ocamlc.opt -config > /tmp/jbuild48b37a.output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl point.ml) > _build/default/point.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .point.eobjs -no-alias-deps -o .point.eobjs/point.cmo -c -impl point.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .point.eobjs -intf-suffix .ml -no-alias-deps -o .point.eobjs/point.cmx -c -impl point.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -o point.exe .point.eobjs/point.cmx)
